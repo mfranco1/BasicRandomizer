@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Home"
+    android:background="@drawable/icon">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Clear"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:id="@+id/clearButton"
+        android:background="@drawable/roundedgebutton"
+        android:layout_below="@+id/randomizeButton"
+        android:layout_alignLeft="@+id/randomizeButton"
+        android:layout_alignStart="@+id/randomizeButton"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:text="Randomize"
+        android:textSize="12sp"
+        android:textColor="#ffffffff"
+        android:id="@+id/randomizeButton"
+        android:background="@drawable/roundedgebutton"
+        android:layout_below="@+id/addButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffffff"
+        android:textColorHint="#ffffff"
+        android:id="@+id/editText"
+        android:inputType="text"
+        android:maxLength="25"
+        android:hint="Type your entries here"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/randomizeButton"
+        android:layout_alignEnd="@+id/randomizeButton"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:id="@+id/addButton"
+        android:background="@drawable/roundedgebutton"
+        android:layout_alignTop="@+id/editText"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/counter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:textSize="38sp"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:id="@+id/counter"
+        android:background="@drawable/circlebutton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
